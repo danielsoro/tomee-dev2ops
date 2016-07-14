@@ -57,13 +57,13 @@
       <version>1.1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.openejb</groupId>
+      <groupId>org.apache.tomee</groupId>
       <artifactId>javaee-api</artifactId>
       <version>${openejb.javaee.api}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.openejb</groupId>
+      <groupId>org.apache.tomee</groupId>
       <artifactId>arquillian-tomee-remote</artifactId>
       <version>${tomee.version}</version>
       <scope>test</scope>
@@ -119,7 +119,7 @@
 
     <plugins>
       <plugin>
-        <groupId>org.apache.openejb.maven</groupId>
+        <groupId>org.apache.tomee.maven</groupId>
         <artifactId>tomee-maven-plugin</artifactId>
         <version>${tomee.version}</version>
         <configuration>
@@ -138,9 +138,9 @@
   </build>
 
   <properties>
-    <tomee.version>1.7.2</tomee.version>
+    <tomee.version>7.0.1</tomee.version>
     <cxf.version>2.6.16</cxf.version>
-    <openejb.javaee.api>6.0-6</openejb.javaee.api>
+    <openejb.javaee.api>7.0</openejb.javaee.api>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.target>1.8</maven.compiler.target>
